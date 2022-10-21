@@ -1,0 +1,231 @@
+:root {
+  --purple: rgb(85, 2, 85);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  min-width: 50%;
+}
+
+.main {
+  display: flex;
+  margin: auto;
+  padding: 0px 10px;
+}
+.banner {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-left: 155px;
+  padding: 20px;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--purple);
+}
+
+.sidenav {
+  height: 100%;
+  width: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 20px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.about-me {
+  background-color: #f1f1f1;
+  display: inline-block;
+  margin: 20px 20px 0 170px;
+  border-radius: 20px;
+  box-shadow: rgb(39, 39, 39) 3px 3px;
+  font-size: 150%;
+  border: outset;
+  padding: 10px;
+  min-width: min-content;
+  min-height: auto;
+}
+
+.about-me h2 {
+  font-size: 180%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: underline;
+}
+
+.about-me-text {
+  font-size: 150%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 50px;
+  padding-right: 10%;
+}
+
+.stuff-head {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 300%;
+  justify-content: center;
+  background: linear-gradient(to bottom right, black, rgb(110, 0, 110));
+  color: #cfcbcb;
+  display: flex;
+  margin: 2rem 8rem 0 12rem;
+  padding: 2rem 1rem 2rem 1rem;
+  outline: 2px ridge var(--purple);
+  outline-offset: -2px;
+}
+.head-shot {
+  display: flex;
+  flex-wrap: wrap;
+  float: right;
+  margin: 0 25px 25px 30px;
+  position: static;
+  margin-right: 25px;
+  max-width: 30%;
+  height: auto;
+}
+
+.work-card {
+  background: linear-gradient(to bottom right, black, rgb(110, 0, 110));
+  color: #cfcbcb;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 2rem 55rem 0 13rem;
+  min-height: 100%;
+  min-width: min-content;
+  padding: 2rem;
+  outline: 2px ridge var(--purple);
+  outline-offset: -2px;
+}
+
+.work-card:hover {
+  color: (--purple);
+  box-shadow: 0 0 15px purple;
+}
+
+.git-link {
+  color: #cfcbcb;
+  border: dashed;
+  border-color: #cfcbcb;
+  font-family: fantasy, sans-serif;
+  text-decoration: none;
+  margin-left: 5rem;
+  font-size: 200%;
+}
+
+.card-header {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 200%;
+}
+
+.resume-box {
+  background: linear-gradient(to top left, black, rgb(110, 0, 110));
+  color: #cfcbcb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem 30rem 0 30rem;
+  min-height: min-content;
+  min-width: min-content;
+  padding: 2rem;
+  outline: 2px ridge var(--purple);
+  outline-offset: -2px;
+}
+
+.resume-box:hover {
+  color: (--purple);
+  box-shadow: 0 0 15px purple;
+}
+
+.resume-download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.resume-paper-icon {
+  margin: 2rem 16rem;
+  max-width: 30%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.resume-button {
+  display: flex;
+  font-size: larger;
+  border-radius: 10px;
+  margin: 1rem 21rem;
+  padding: 1rem 2rem;
+  transition-duration: 0.4s;
+  background-color: #111;
+  color: white;
+  border: 2px solid #f1f1f1;
+}
+
+.resume-button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.contact-grid {
+  height: 90vh;
+  margin: 3rem 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contact-box {
+  background: linear-gradient(to bottom right, black, rgb(110, 0, 110));
+  color: #cfcbcb;
+  color: white;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  padding: 7rem;
+  margin-left: 2rem;
+}
+
+.contact-box:hover {
+  color: (--purple);
+  box-shadow: 0 0 15px purple;
+}
+
+
+.email-link {
+  color: white;
+  text-decoration: none;
+}
+
+.phone-box {
+
+}
+
+@media screen and (max-width: 768px) {
+  main,
+  nav {
+    flex-direction: column;
+  }
+}

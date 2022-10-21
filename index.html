@@ -1,27 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio of David McWhirter</title>
-</head>
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
 
-<body>
-    <section class="about-me">
-        <h1>About me</h1>
-        <p>Text Here</p>
-    </section>
-</body>
+  <body>
+    <header>
+      <h1 class="banner">Portfolio of David McWhirter</h1>
 
-<main>
+      <nav class="sidenav">
+        <a href="#about-me-start">About Me</a>
+        <a href="#my-stuff">My Stuff</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact-me">Contact Me</a>
+      </nav>
+    </header>
 
-</main>
+    <main>
+      <section id="about-me-start" class="about-me">
+        <h2>About Me:</h2>
+        <img
+          src="C:\Users\david\OneDrive\Pictures\PXL_20220913_175312887.jpg"
+          alt="My Face"
+          class="head-shot"
+        />
+        <p class="about-me-text">
+          Hi! My Name is David. Before I got into coding, I started off working
+          in the pizza business. First Dominos, then Papa John's. After a good 8
+          years in management, it came to me that I wanted something better for
+          my career. This page will be evolving in quality over time so you can
+          visually see the progress I've made.
+        </p>
+      </section>
 
-<footer>
+      <section id="my-stuff" class="my-stuff">
+        <h2 class="stuff-head">My Stuff</h2>
+        <figure class="work-card">
+          <h2 class="card-header">My Github Repository:</h2>
+          <a
+            href="https://github.com/Sithryl?tab=repositories"
+            class="git-link"
+            alt="Github Link"
+            >Link to Github</a
+          >
+        </figure>
 
-</footer>
+        <figure class="work-card">
+          <h2 class="card-header">Coming Soon:</h2>
+        </figure>
 
+        <figure class="work-card">
+          <h2 class="card-header">Coming Soon:</h2>
+        </figure>
+
+        <figure class="work-card">
+          <h2 class="card-header">Coming Soon:</h2>
+        </figure>
+      </section>
+
+      <section id="resume" class="resume-box">
+        <h2 class="stuff-head">My Resume</h2>
+        <figure class="resume-download">
+          <a href="./assets/2021_David_M_McWhirter.pdf" download="Resume">
+            <button type="button" class="resume-button">Download</button>
+          </a>
+        </figure>
+      </section>
+
+      <section id="contact-me" class="contact-me-cards">
+        <h2 class="stuff-head">Contact Me</h2>
+        <section class="contact-grid">
+          <figure class="contact-box">
+            <a href="mailto: david@tgsummit.com" class="email-link"
+              >Click Here To Email Me</a
+            >
+          </figure>
+
+          <figure class="contact-box">
+            <h3>My Number: 704-696-6093</h3>
+          </figure>
+        </section>
+      </section>
+    </main>
+  </body>
+
+  <footer></footer>
 </html>
