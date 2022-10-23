@@ -7,81 +7,100 @@
     <title>Portfolio of David McWhirter</title>
     <link rel="stylesheet" href="./assets/reset.css" />
     <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
   </head>
-
+  <!-- navigation -->
   <body>
-    <header>
-      <h1 class="banner">Portfolio of David McWhirter</h1>
-
-      <nav class="sidenav">
-        <a href="#about-me-start">About Me</a>
-        <a href="#my-stuff">My Stuff</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact-me">Contact Me</a>
+    <section class="header">
+      <nav>
+        <div class="nav-links">
+          <i class="fa-solid fa-xmark"></i>
+          <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#my-stuff">My Stuff</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars"></i>
       </nav>
-    </header>
+    </section>
+
+    <!-- About me -->
 
     <main>
-      <section id="about-me-start" class="about-me">
-        <h2>About Me:</h2>
-        <img
-          src="C:\Users\david\OneDrive\Pictures\PXL_20220913_175312887.jpg"
-          alt="My Face"
-          class="head-shot"
-        />
-        <p class="about-me-text">
-          Hi! My Name is David. Before I got into coding, I started off working
-          in the pizza business. First Dominos, then Papa John's. After a good 8
-          years in management, it came to me that I wanted something better for
-          my career. This page will be evolving in quality over time so you can
-          visually see the progress I've made.
+      <section id="about-me" class="row">
+        <div class="me-col">
+          <img
+            src="./assets/me.jpg"
+            alt="ME"
+          />
+          </div>
+          <div class="my-stuff">
+        <h1>About Me:</h1>
+        <p>
+          Hi! My Name is David. I'm a new coder living in North Carolina. <br>
+          This is a page I made to show off some things I've done.
+          I'm always looking for new challenges to improve my abilities. <br>
+          If you wish to contact me, my info is down below!
         </p>
-      </section>
+        </div>
+      </section> -->
+
+      <!-- my stuff -->
 
       <section id="my-stuff" class="my-stuff">
-        <h2 class="stuff-head">My Stuff</h2>
-        <figure class="work-card">
-          <h2 class="card-header">My Github Repository:</h2>
-          <a
-            href="https://github.com/Sithryl?tab=repositories"
-            class="git-link"
-            alt="Github Link"
-            >Link to Github</a
-          >
+        <h1>Some Things I've Done</h1>
+        <figure class="row">
+          <div class="work">
+            <h3>My Github Repository:</h3>
+            <a
+              href="https://github.com/Sithryl?tab=repositories"
+              alt="Git Link" 
+            ><img src="./assets/GitHub-Symbol.png" alt="GitHub-Symbol"></a>
+          </div>
+          <div class="work">
+            <h3>Coming Soon</h3>
+          </div>
+          <div class="work">
+            <h3>Coming Soon</h3>
+          </div>
+          </div>
         </figure>
 
-        <figure class="work-card">
-          <h2 class="card-header">Coming Soon:</h2>
-        </figure>
-
-        <figure class="work-card">
-          <h2 class="card-header">Coming Soon:</h2>
-        </figure>
-
-        <figure class="work-card">
-          <h2 class="card-header">Coming Soon:</h2>
-        </figure>
+       
       </section>
 
-      <section id="resume" class="resume-box">
-        <h2 class="stuff-head">My Resume</h2>
-        <figure class="resume-download">
+      <section id="resume" class="resume">
+        <h1>My Resume</h1>
+        <figure>
           <a href="./assets/2021_David_M_McWhirter.pdf" download="Resume">
-            <button type="button" class="resume-button">Download</button>
+            <button type="button">Download</button>
           </a>
         </figure>
       </section>
 
-      <section id="contact-me" class="contact-me-cards">
-        <h2 class="stuff-head">Contact Me</h2>
-        <section class="contact-grid">
-          <figure class="contact-box">
-            <a href="mailto: david@tgsummit.com" class="email-link"
-              >Click Here To Email Me</a
+      <!-- contact info -->
+
+      <section id="contact-me" class="my-stuff">
+        <h1>Contact Me</h1>
+        <section class="row">
+          <figure class="work">
+            <a href="mailto: david@tgsummit.com"
+              >Email me at david@tgsummit.com</a
             >
           </figure>
 
-          <figure class="contact-box">
+          <figure class="work">
             <h3>My Number: 704-696-6093</h3>
           </figure>
         </section>
