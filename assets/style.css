@@ -76,8 +76,10 @@ nav {
   text-align: left;
 }
 
-.me-col img {
+.me-col img,
+.work-col img {
   width: 100%;
+  padding: 5%;
 }
 
 /* shown work layout */
@@ -117,13 +119,29 @@ p {
   transition: 0.5s;
 }
 
+.work-col {
+  display: inline-block;
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  text-align: Top;
+}
+
+.work-col h3 {
+  color: #fff;
+  padding: 5%;
+}
+
 .work a {
   text-decoration: none;
   color: #111;
 }
 
 .work img {
-  max-width: 100px;
+  margin-top: 40%;
+  max-width: 200px;
 }
 
 h2 {
