@@ -26,6 +26,7 @@ body {
   flex-shrink: 1;
 }
 
+/* navigation */
 nav {
   display: flex;
   padding: 2% 6%;
@@ -79,10 +80,7 @@ nav {
   width: 100%;
 }
 
-nav .fa {
-  display: none;
-}
-
+/* shown work layout */
 .my-stuff {
   width: 80%;
   margin: auto;
@@ -97,7 +95,7 @@ h1 {
 
 p {
   color: #fff;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 22px;
   padding: 10px;
@@ -119,14 +117,24 @@ p {
   transition: 0.5s;
 }
 
+.work a {
+  text-decoration: none;
+  color: #111;
+}
+
 .work img {
   max-width: 100px;
 }
 
-h3 {
+h2 {
+  font-size: 30px;
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 .work:hover {
@@ -140,14 +148,32 @@ h3 {
   flex-basis: 31%;
   background: var(--purple);
   border-radius: 10px;
+  margin-top: 5%;
   margin-bottom: 5%;
   padding: 20px 12px;
   box-sizing: border-box;
   transition: 0.5s;
 }
 
-.resume button{
+.resume h1 {
+  display: flex;
+  padding: 1rem;
+}
+
+.resume button {
+  color: #111;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
   text-decoration: none;
+  margin-left: 25%;
+}
+
+.resume button:hover {
+  background: #111;
+  color: #fff;
 }
 
 @media (max-width: 700px) {
@@ -162,26 +188,15 @@ h3 {
     font-size: 17px;
   }
   .nav-links ul li {
-    display: block;
+    display: flex;
   }
   .nav-links {
-    position: absolute;
-    background: var(--purple);
-    height: 100vh;
+    position: relative;
     width: 200px;
-    top: 0;
-    right: -200px;
     text-align: left;
     z-index: 2;
   }
 
-  nav .fa {
-    display: block;
-    color: #fff;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer;
-  }
   .nav-links ul {
     padding: 30px;
   }
